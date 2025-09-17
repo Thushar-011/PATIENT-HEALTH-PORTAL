@@ -1,0 +1,15 @@
+# This is a blueprint for deploying a Node.js web service on Render.
+
+services:
+  # A name for your web service
+  - name: patient-health-portal
+    # The type of service
+    type: web
+    # The runtime environment for your service
+    env: node
+    # The branch to deploy from
+    branch: main
+    # The command to install your project's dependencies
+    buildCommand: "npm install"
+    # The command to start your application
+    startCommand: "npm start"
