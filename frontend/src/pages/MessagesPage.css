@@ -1,0 +1,127 @@
+/* frontend/src/pages/MessagesPage.css */
+.messages-container {
+  display: flex;
+  height: 80vh;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.conversations-list {
+  width: 30%;
+  border-right: 1px solid #ccc;
+  overflow-y: auto;
+}
+
+.conversations-list h2 {
+  padding: 1rem;
+  margin: 0;
+  border-bottom: 1px solid #ccc;
+  background-color: #f7f7f7;
+}
+
+.conversation-item {
+  padding: 1rem;
+  cursor: pointer;
+  border-bottom: 1px solid #eee;
+}
+
+.conversation-item:hover {
+  background-color: #f1f1f1;
+}
+
+.conversation-item.selected {
+  background-color: #e0e0e0;
+  font-weight: bold;
+}
+
+.chat-window {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+}
+
+.messages-list {
+  flex-grow: 1;
+  padding: 1rem;
+  overflow-y: auto;
+}
+
+.message-form {
+  display: flex;
+  padding: 1rem;
+  border-top: 1px solid #ccc;
+}
+
+.message-form input {
+  flex-grow: 1;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 18px;
+  margin-right: 1rem;
+}
+
+/* Add these styles to your existing MessagesPage.css */
+
+.conversations-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem;
+  border-bottom: 1px solid #ccc;
+  background-color: #f7f7f7;
+}
+
+.conversations-header h2 {
+  padding: 1rem 0;
+}
+
+.new-chat-btn {
+  font-size: 1.5rem;
+  font-weight: bold;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  line-height: 30px;
+  text-align: center;
+}
+
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 8px;
+  width: 90%;
+  max-width: 500px;
+}
+
+.doctors-list {
+  max-height: 300px;
+  overflow-y: auto;
+  margin-bottom: 1rem;
+}
+
+.doctor-item {
+  padding: 0.75rem;
+  border-bottom: 1px solid #eee;
+  cursor: pointer;
+}
+.doctor-item:hover {
+  background-color: #f1f1f1;
+}

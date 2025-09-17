@@ -1,0 +1,55 @@
+.list-page-container {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.list-page-container h1 {
+  color: var(--color-primary);
+  margin-bottom: 2rem;
+}
+
+.create-form {
+  background-color: #f9f9f9;
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+}
+
+.create-form h2 {
+  color: var(--color-primary-dark);
+  margin-bottom: 1.5rem;
+}
+
+.list-container {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.list-item {
+  background-color: #fff;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.list-item h3 {
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.list-item p {
+  margin: 0.5rem 0;
+}
+
+/* frontend/src/pages/ListPages.css */
+
+/* We can keep this file for any custom overrides or small additions.
+   For now, we can add styles for the status badges.
+   Bootstrap's text color utilities can sometimes be overridden,
+   so being explicit here is good.
+*/
+
+.badge.bg-warning, .badge.bg-info {
+  color: #000 !important;
+}
